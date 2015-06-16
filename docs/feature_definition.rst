@@ -388,7 +388,7 @@ you specify only what's relevant for each feature; for example
     def words_in_subject(...): ...
 
     @input_schema({"sender": {"address": str}, "recipient": {"address": str}})
-    def sender and_recipient_in_same_domain(...): ...
+    def sender_and_recipient_in_same_domain(...): ...
 
 input schemas also allow specifying schemas for attributes of objects if your
 data point is some custom object, or something like a ``namedtuple``. If the
@@ -402,7 +402,7 @@ use
 
     @input_schema(sender=ObjectSchema(address=str),
                   recipient=ObjectSchema(address=str))
-    def sender and_recipient_in_same_domain(...): ...
+    def sender_and_recipient_in_same_domain(...): ...
 
 The general rules for ``input_schema`` and ``output_schema`` are:
 
