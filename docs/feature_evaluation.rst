@@ -100,7 +100,7 @@ For many experiments, the result you get is useful even if you drop some
 samples, or even if you ignore a few buggy features while letting the other ones
 be evaluated.
 
-FetureForge provides a "tolerant" version of the vectorizer that can be used
+FeatureForge provides a "tolerant" version of the vectorizer that can be used
 by passing `tolerant=True` as an argument when instantiating `Vectorizer`.
 When in tolerant mode, the following things happen:
 
